@@ -7,6 +7,7 @@ plugins {
 	id 'eclipse'
 	id 'de.undercouch.download' version '5.0.4'
 	id 'signing'
+  id 'org.checkerframework' version '0.6.35'
 }
 
 repositories {
@@ -30,6 +31,13 @@ gradlePlugin {
 			tags.set(['java', 'packager', 'gradle-plugin', 'maven-plugin', 'native', 'installer', 'debian-packages', 'rpm-packages', 'dmg', 'maven', 'gradle', 'distribution', 'javapackager', 'linux-executables', 'deb', 'rpm', 'native-windows', 'java-applications', 'pkg', 'msi'])
 		}
 	}
+}
+
+apply plugin: 'org.checkerframework'
+checkerFramework {
+  checkers = [
+    'org.checkerframework.checker.optional.OptionalChecker',
+  ]
 }
 
 configurations {
