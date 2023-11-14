@@ -41,7 +41,6 @@ public class GenerateDmg extends ArtifactGenerator<MacPackager> {
 	}
 	
 	@Override
-  @SuppressWarnings("method.invocation") // bug : get() on possibly-empty.
 	protected File doApply(MacPackager packager) throws Exception {
 
 		File appFolder = packager.getAppFolder();
