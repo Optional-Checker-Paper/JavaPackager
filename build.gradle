@@ -7,6 +7,7 @@ plugins {
 	id 'eclipse'
 	id 'de.undercouch.download' version '5.0.4'
 	id 'signing'
+  id "com.github.spotbugs" version "5.2.5"
 }
 
 repositories {
@@ -219,3 +220,11 @@ task updateWhyJavaLauncher(type : Download) {
 	dest file('src/main/resources/windows')
     overwrite true
 }
+
+spotbugs {
+     ignoreFailures = true
+     toolVersion = '4.8.2'
+     effort = 'default'
+     reportLevel = 'default'
+     reportsDir = file("$buildDir/spotbugs")
+ }
