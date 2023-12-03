@@ -40,6 +40,7 @@ public class GenerateDmg extends ArtifactGenerator<MacPackager> {
 		return false;		
 	}
 	
+	@SuppressWarnings("OptionalGetWithoutIsPresent") // intellij-suppression-optional-get-without-check-tp
 	@Override
 	protected File doApply(MacPackager packager) throws Exception {
 

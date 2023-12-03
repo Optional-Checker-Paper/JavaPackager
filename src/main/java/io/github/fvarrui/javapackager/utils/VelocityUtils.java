@@ -83,6 +83,7 @@ public class VelocityUtils {
 		}
 	}
 
+	@SuppressWarnings("OptionalIsPresent") // intellij-suppression-optional-is-present
 	public static void render(String templatePath, File output, Object info) throws Exception {
 		Optional<io.github.fvarrui.javapackager.model.Template> template = templates.stream().filter(t -> t.getName().equals(templatePath)).findFirst();
 		render(templatePath, output, info, template.isPresent() ? template.get().isBom() : false);

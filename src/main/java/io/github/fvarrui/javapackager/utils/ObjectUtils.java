@@ -16,7 +16,10 @@ public class ObjectUtils {
 	 * @param values List of objects 
 	 * @return First non-null object from values list
 	 */
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({
+            "unchecked",
+            "OptionalIsPresent" // intellij-suppression-optional-is-present
+    })
 	public static <T> T defaultIfNull(final T ... values) {
         Optional<T> value = Arrays.asList(values).stream().filter(v -> v != null).findFirst();
         if (value.isPresent()) return value.get();
@@ -28,7 +31,8 @@ public class ObjectUtils {
      * @param values List of String
      * @return First non-blank string
      */
-	public static String defaultIfBlank(final String ... values) {
+	@SuppressWarnings("OptionalIsPresent") // intellij-suppression-optional-is-present
+    public static String defaultIfBlank(final String ... values) {
         Optional<String> value = Arrays.asList(values).stream().filter(v -> v != null && !StringUtils.isBlank(v)).findFirst();
         if (value.isPresent()) return value.get();
         return null;
