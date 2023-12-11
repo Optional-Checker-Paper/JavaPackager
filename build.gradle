@@ -7,7 +7,7 @@ plugins {
 	id 'eclipse'
 	id 'de.undercouch.download' version '5.0.4'
 	id 'signing'
-  id 'org.checkerframework' version '0.6.35'
+	id 'org.checkerframework' version '0.6.35'
 }
 
 repositories {
@@ -16,6 +16,7 @@ repositories {
 	maven { 
 		url 'https://plugins.gradle.org/m2/'
 	}
+	maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
 }
 
 gradlePlugin {
@@ -35,16 +36,25 @@ gradlePlugin {
 
 apply plugin: 'org.checkerframework'
 checkerFramework {
-  checkers = [
-    'org.checkerframework.checker.optional.OptionalChecker',
-  ]
-  extraJavacArgs = [
-    '-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno',
-    '-AassumePure',
-    '-AwarnUnneededSuppressions',
-    '-AassumeAssertionsAreEnabled',
-   ]
-   excludeTests = true
+	checkers = [
+		'org.checkerframework.checker.optional.OptionalChecker',
+	]
+	extraJavacArgs = [
+		'-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno',
+		'-AassumePure',
+		'-AwarnUnneededSuppressions',
+		'-AassumeAssertionsAreEnabled',
+	 ]
+	 excludeTests = true
+}
+ext.checkerFrameworkVersion = '3.41.1-SNAPSHOT'
+dependencies {
+	compileOnly "org.checkerframework:checker-qual:${checkerFrameworkVersion}"
+	testCompileOnly "org.checkerframework:checker-qual:${checkerFrameworkVersion}"
+	checkerFramework "org.checkerframework:checker:${checkerFrameworkVersion}"
+}
+configurations.all {
+	resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
 }
 
 configurations {
@@ -107,6 +117,7 @@ publishing {
 				password = project.findProperty("ossrhPassword") ?: ''
 			}
 		}
+		maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
 	}
 	publications {
 		pluginMaven(MavenPublication) {
