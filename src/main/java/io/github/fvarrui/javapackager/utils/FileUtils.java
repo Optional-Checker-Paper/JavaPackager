@@ -301,7 +301,7 @@ public class FileUtils {
 	 * @param regex        Regular expression
 	 * @return Found file or null if nothing matches
 	 */
-	@SuppressWarnings("optional:method.invocation") // tp-get-empty
+	@SuppressWarnings("optional:method.invocation") // true positive: get
 	public static File findFirstFile(File searchFolder, String regex) {
 		return Arrays.asList(searchFolder.listFiles((dir, name) -> Pattern.matches(regex, name))).stream()
 				.map(f -> new File(f.getName())).findFirst().get();
