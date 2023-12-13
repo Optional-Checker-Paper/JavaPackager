@@ -38,12 +38,14 @@ apply plugin: 'org.checkerframework'
 checkerFramework {
 	checkers = [
 		'org.checkerframework.checker.optional.OptionalChecker',
+    'org.checkerframework.common.util.report.ReportChecker',
 	]
 	extraJavacArgs = [
 		'-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno',
 		'-AassumePure',
 		'-AwarnUnneededSuppressions',
 		'-AassumeAssertionsAreEnabled',
+    "-Astubs=${project.projectDir}/reportoptional.astub",
 	 ]
 	 excludeTests = true
 }
@@ -245,3 +247,9 @@ task updateWhyJavaLauncher(type : Download) {
 	dest file('src/main/resources/windows')
     overwrite true
 }
+
+afterEvaluate {
+     tasks.withType(JavaCompile) {
+         options.compilerArgs << "-Xmaxerrs" << "99999"
+     }
+ }
