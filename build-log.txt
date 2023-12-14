@@ -1,0 +1,177 @@
+
+> Configure project :
+Signing plugin detected. Will automatically sign the published artifacts.
+
+> Task :createCheckerFrameworkManifest
+
+> Task :compileJava
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/ObjectUtils.java:21: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<T> value = Arrays.asList(values).stream().filter(v -> v != null).findFirst();
+                    ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/ObjectUtils.java:21: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<T> value = Arrays.asList(values).stream().filter(v -> v != null).findFirst();
+                                                                                           ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/ObjectUtils.java:22: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (value.isPresent()) return value.get();
+                           ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/ObjectUtils.java:22: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (value.isPresent()) return value.get();
+                 ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/ObjectUtils.java:22: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+        if (value.isPresent()) return value.get();
+                                               ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/ObjectUtils.java:22: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+        if (value.isPresent()) return value.get();
+                                           ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/ObjectUtils.java:32: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<String> value = Arrays.asList(values).stream().filter(v -> v != null && !StringUtils.isBlank(v)).findFirst();
+                         ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/ObjectUtils.java:32: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<String> value = Arrays.asList(values).stream().filter(v -> v != null && !StringUtils.isBlank(v)).findFirst();
+                                                                                                                           ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/ObjectUtils.java:33: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (value.isPresent()) return value.get();
+                           ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/ObjectUtils.java:33: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (value.isPresent()) return value.get();
+                 ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/ObjectUtils.java:33: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+        if (value.isPresent()) return value.get();
+                                               ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/ObjectUtils.java:33: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+        if (value.isPresent()) return value.get();
+                                           ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/VelocityUtils.java:88: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<io.github.fvarrui.javapackager.model.Template> template = templates.stream().filter(t -> t.getName().equals(templatePath)).findFirst();
+		                                                        ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/VelocityUtils.java:88: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<io.github.fvarrui.javapackager.model.Template> template = templates.stream().filter(t -> t.getName().equals(templatePath)).findFirst();
+		                                                                                                                                             ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/VelocityUtils.java:89: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		render(templatePath, output, info, template.isPresent() ? template.get().isBom() : false);
+		                                                     ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/VelocityUtils.java:89: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		render(templatePath, output, info, template.isPresent() ? template.get().isBom() : false);
+		                                           ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/VelocityUtils.java:89: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+		render(templatePath, output, info, template.isPresent() ? template.get().isBom() : false);
+		                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/VelocityUtils.java:89: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+		render(templatePath, output, info, template.isPresent() ? template.get().isBom() : false);
+		                                                                  ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/FileUtils.java:307: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+				.map(f -> new File(f.getName())).findFirst().get();
+				                                                ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/FileUtils.java:307: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+				.map(f -> new File(f.getName())).findFirst().get();
+				                                            ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/packagers/GenerateDmg.java:108: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+									.findFirst().get();
+									                ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/packagers/GenerateDmg.java:108: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+									.findFirst().get();
+									            ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/packagers/CreateWindowsExeWinRun4j.java:93: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+				Optional<File> jvmDllFile = Arrays.asList(JVM_DLL_PATHS)
+				               ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/packagers/CreateWindowsExeWinRun4j.java:97: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+					.findFirst();
+					          ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/packagers/CreateWindowsExeWinRun4j.java:100: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+				if (!jvmDllFile.isPresent()) {
+				                         ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/packagers/CreateWindowsExeWinRun4j.java:100: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+				if (!jvmDllFile.isPresent()) {
+				               ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/packagers/CreateWindowsExeWinRun4j.java:106: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+				Path jvmDllPath = jvmDllFile.get().toPath();
+				                                ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/packagers/CreateWindowsExeWinRun4j.java:106: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+				Path jvmDllPath = jvmDllFile.get().toPath();
+				                            ^
+Note: /tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/utils/SignerHelper.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+28 warnings
+
+> Task :generatePomFileForPluginMavenPublication
+
+> Task :generatePluginDescriptor
+[main] INFO org.apache.maven.cli.MavenCli - Error stacktraces are turned on.
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Scanning for projects...
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - -------------------< io.github.fvarrui:javapackager >-------------------
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Building javapackager 1.7.4
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ----------------------------[ maven-plugin ]----------------------------
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-plugin-plugin:3.9.0:descriptor (default-cli) @ javapackager ---
+[main] WARN org.apache.maven.plugin.plugin.DescriptorGeneratorMojo - 
+
+Some dependencies of Maven Plugins are expected to be in provided scope.
+Please make sure that dependencies listed below declared in POM
+have set '<scope>provided</scope>' as well.
+
+The following dependencies are in wrong scope:
+ * org.apache.maven:maven-plugin-api:jar:3.6.0:runtime
+ * org.apache.maven:maven-model:jar:3.6.0:runtime
+ * org.apache.maven:maven-artifact:jar:3.6.0:runtime
+ * org.apache.maven:maven-core:jar:3.0.5:runtime
+ * org.apache.maven:maven-settings:jar:3.0.5:runtime
+ * org.apache.maven:maven-settings-builder:jar:3.0.5:runtime
+ * org.apache.maven:maven-repository-metadata:jar:3.0.5:runtime
+ * org.apache.maven:maven-model-builder:jar:3.0.5:runtime
+ * org.apache.maven:maven-aether-provider:jar:3.0.5:runtime
+
+
+
+[main] INFO org.apache.maven.plugin.plugin.DescriptorGeneratorMojo - Using 'UTF-8' encoding to read mojo source files.
+[main] INFO org.apache.maven.tools.plugin.scanner.DefaultMojoScanner - java-annotations mojo extractor found 1 mojo descriptor.
+[main] INFO org.apache.maven.tools.plugin.scanner.DefaultMojoScanner - java-javadoc mojo extractor found 0 mojo descriptor.
+[main] INFO org.apache.maven.tools.plugin.scanner.DefaultMojoScanner - ant mojo extractor found 0 mojo descriptor.
+[main] INFO org.apache.maven.tools.plugin.scanner.DefaultMojoScanner - bsh mojo extractor found 0 mojo descriptor.
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - BUILD SUCCESS
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Total time:  1.559 s
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Finished at: 2023-12-14T11:41:33-08:00
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+
+> Task :pluginDescriptors
+> Task :processResources
+> Task :classes
+> Task :jar
+
+> Task :javadoc
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/packagers/AbstractCreateWindowsExe.java:87: warning: no description for @param
+	 * @param packager
+	   ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/packagers/AbstractCreateWindowsExe.java:88: warning: no description for @return
+	 * @return
+	   ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/packagers/AbstractCreateWindowsExe.java:89: warning: no description for @throws
+	 * @throws Exception
+	   ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/packagers/PackagerSettings.java:580: warning: no description for @param
+	 * @param organizationEmail
+	   ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/model/RegistryEntry.java:105: warning: no @return
+	public String getValueTypeAsWIXToolsetString() {
+	              ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/packagers/BundleJre.java:184: warning: no @param for packagingJdk
+	protected String getRequiredModules(File packagingJdk, File libsFolder, boolean customizedJre, File jarFile, List<String> defaultModules, List<String> additionalModules, List<File> additionalModulePaths) throws Exception {
+	                 ^
+/tmp/experiments/optional-paper-counts-repos/JavaPackager/src/main/java/io/github/fvarrui/javapackager/packagers/Packager.java:208: warning: no description for @throws
+	 * @throws Exception 
+	   ^
+7 warnings
+
+> Task :javadocJar
+> Task :sourcesJar
+> Task :assemble
+> Task :winrun4j-launcher:compileJava
+> Task :winrun4j-launcher:processResources NO-SOURCE
+> Task :winrun4j-launcher:classes
+> Task :winrun4j-launcher:jar
+> Task :winrun4j-launcher:assemble
+
+BUILD SUCCESSFUL in 13s
+12 actionable tasks: 12 executed
