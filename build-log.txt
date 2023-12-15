@@ -102,6 +102,8 @@ Note: Recompile with -Xlint:deprecation for details.
 [main] INFO org.apache.maven.cli.event.ExecutionEventLogger - -------------------< io.github.fvarrui:javapackager >-------------------
 [main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Building javapackager 1.7.4
 [main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ----------------------------[ maven-plugin ]----------------------------
+[main] INFO org.apache.maven.cli.transfer.Slf4jMavenTransferListener - Downloading from : https://plugins.gradle.org/m2/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.pom
+[main] INFO org.apache.maven.cli.transfer.Slf4jMavenTransferListener - Downloaded from : https://plugins.gradle.org/m2/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.pom (4.2 kB at 5.7 kB/s)
 [main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
 [main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-plugin-plugin:3.9.0:descriptor (default-cli) @ javapackager ---
 [main] WARN org.apache.maven.plugin.plugin.DescriptorGeneratorMojo - 
@@ -131,8 +133,8 @@ The following dependencies are in wrong scope:
 [main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
 [main] INFO org.apache.maven.cli.event.ExecutionEventLogger - BUILD SUCCESS
 [main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
-[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Total time:  1.559 s
-[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Finished at: 2023-12-14T11:41:33-08:00
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Total time:  2.460 s
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Finished at: 2023-12-14T19:25:38-08:00
 [main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
 
 > Task :pluginDescriptors
@@ -173,5 +175,5 @@ The following dependencies are in wrong scope:
 > Task :winrun4j-launcher:jar
 > Task :winrun4j-launcher:assemble
 
-BUILD SUCCESSFUL in 13s
+BUILD SUCCESSFUL in 12s
 12 actionable tasks: 12 executed
