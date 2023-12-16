@@ -41,7 +41,7 @@ public class GenerateDmg extends ArtifactGenerator<MacPackager> {
 	}
 	
 	@Override
-	@SuppressWarnings("optional:method.invocation") // true positive: get
+	@SuppressWarnings("optional:method.invocation") // true positive: file system operation depends on a particular file existing
 	protected File doApply(MacPackager packager) throws Exception {
 
 		File appFolder = packager.getAppFolder();
